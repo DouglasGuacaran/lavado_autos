@@ -103,7 +103,7 @@ $(document).ready(function () {
         if ( $("#digito").val() >= 0 ||  $("#digito").val() == ""){          
             mensaje.innerHTML = "";
             alert('Ingreso de orden correcto')
-            // $('#formulario')[0].reset();
+            $('#formulario')[0].reset();
         }
     } else {
       let mensaje = document.getElementById("error");
