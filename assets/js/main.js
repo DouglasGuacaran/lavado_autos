@@ -93,7 +93,6 @@ $(document).ready(function () {
         },
   submitHandler: function (formulario) {
     
-    console.log("entro a funcion")
     if (
       $("#digito").val() == "k" ||
       $("#digito").val() <= 8 &&
