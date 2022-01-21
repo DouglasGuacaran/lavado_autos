@@ -145,21 +145,18 @@ $(document).ready(function () {
     let valor_lavado_ext_int = 7000
     let valor_motor = 15000
 
-    if (lavado_ext_int.checked && lavado_motor.checked){
+    if (lavado_motor.checked && lavado_ext_int.checked){
       total.value = [(valor_lavado_ext_int+(valor_lavado_ext_int*iva))+(valor_motor+(valor_motor*iva))]
       costo.value = valor_lavado_ext_int + valor_motor 
-    } else if ( lavado_ext_int.checked && lavado_motor.unchecked){
+    } else if (lavado_ext_int.checked ){
       total.value = valor_lavado_ext_int+(valor_lavado_ext_int*iva);
       costo.value = valor_lavado_ext_int
-    }else if( lavado_motor.checked){
+    } else if ( lavado_motor.checked ){
       total.value = valor_motor+(valor_motor*iva);
       costo.value = valor_motor
-    } else if (lavado_ext_int.unchecked){
-      total.innerHTML = "Valor neto del servicio";
-      costo.innerHTML = "Total mas IVA";
     } else {
-      total.innerHTML = "Valor neto del servicio";
-      costo.innerHTML = "Total mas IVA";
+      total.value = "Valor neto del servicio";
+      costo.value = "Total mas IVA";
     }
 
   });
