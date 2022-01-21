@@ -155,8 +155,8 @@ $(document).ready(function () {
       total.value = valor_motor+(valor_motor*iva);
       costo.value = valor_motor
     } else {
-      total.value = "Valor neto del servicio";
-      costo.value = "Total mas IVA";
+      costo.value = "Valor neto del servicio";
+      total.value = "Total mas IVA";
     }
 
   });
